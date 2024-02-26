@@ -1,0 +1,20 @@
+<button class="btn-new"(click)="onClick()">Post New customer</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let customer of customers" >
+            <td>{{customer.name}}</td>
+            <td>{{customer.email}}</td>
+            <td>{{customer.phone}}</td>
+            
+        </tr>
+    </tbody>
+</table>
